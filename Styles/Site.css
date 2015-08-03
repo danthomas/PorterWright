@@ -1,0 +1,88 @@
+﻿body
+{
+	font-family: Gill Sans MT, Lucida Sans, Lucida Grande, Arial, Helvetica Neue;
+	color: #6D6572;
+	text-align: left;
+	letter-spacing: 0.1px;
+	line-height: 120%;
+}
+a
+{
+	text-decoration: none;
+	color: #6D6572;
+	border: 0px;
+}
+img
+{
+	border: 0px;
+}
+.quote
+{
+	font-style: italic;
+	letter-spacing: 0.1px;
+}
+.url
+{
+	letter-spacing: 0.1px;
+}
+.standard
+{
+	letter-spacing: 0.1px;
+	font-size: 14px;
+}
+.header
+{
+	letter-spacing: 0.1px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.small
+{
+	letter-spacing: 0.1px;
+}
+.panel1
+{
+	background-image: url('../Images/Panel1.png');
+}
+.panel2
+{
+	background-image: url('../Images/Panel2.png');
+}
+.panel3
+{
+	background-image: url('../Images/Panel3.png');
+}
+.middle
+{
+	background-color: #A099A4;
+}
+.head1
+{
+	font-size: 24px;
+	text-align: left;
+}
+.head2
+{
+	font-size: 18px;
+	text-align: left;
+}
+.link
+{
+	font-size: 17px;
+	line-height: 150%;
+}
+.linkSelected
+{
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 150%;
+}
+.linkSmall
+{
+	font-size: 14px;
+}
+.linkSmallSelected
+{
+	font-size: 14px;
+	font-weight: bold;
+}

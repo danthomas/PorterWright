@@ -1,0 +1,201 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="PorterWright.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/Scripts.js" type="text/javascript"></script>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="Start();">
+    <form id="form1" runat="server">
+    <div align="center">
+        <asp:Table ID="Table1" runat="server" Width="800px" BorderWidth="0px" CellPadding="0"
+            CellSpacing="0">
+            <asp:TableRow Height="108px">
+                <asp:TableCell Width="58px" CssClass="panel1">&nbsp;</asp:TableCell>
+                <asp:TableCell Width="684px" ColumnSpan="5" HorizontalAlign="Left">
+                
+                <asp:Table runat="server" Width="684px" BorderWidth="0px" CellPadding="0" CellSpacing="0">
+                    <asp:TableRow>
+                        <asp:TableCell Width="24px">&nbsp;</asp:TableCell>
+                        <asp:TableCell >
+                            <a href="About.aspx"><img src="Images/Logo.png" alt="" /></a>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
+                
+                </asp:TableCell>
+                <asp:TableCell Width="58px" CssClass="panel1">&nbsp;</asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow Height="9px">
+                <asp:TableCell Width="58px" CssClass="panel2"></asp:TableCell>
+                <asp:TableCell Width="684px" CssClass="middle" ColumnSpan="5"></asp:TableCell>
+                <asp:TableCell Width="58px" CssClass="panel2"></asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow Height="16px">
+                <asp:TableCell Width="58px" CssClass="panel1" RowSpan="2"></asp:TableCell>
+                <asp:TableCell Width="684px" ColumnSpan="5"></asp:TableCell>
+                <asp:TableCell Width="58px" CssClass="panel1" RowSpan="2"></asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow Height="400px">
+                <asp:TableCell Width="176px" VerticalAlign="Top" HorizontalAlign="Left">
+                    <asp:Table runat="server" BorderWidth="0px" CellPadding="0" CellSpacing="0">
+                        <asp:TableRow>
+                            <asp:TableCell Width="24">&nbsp;</asp:TableCell>
+                            <asp:TableCell>
+                                <asp:LinkButton runat="server" ID="about" Text="ABOUT" CssClass="link" OnClick="Link_Click" />
+                            </asp:TableCell>
+                        </asp:TableRow>
+                        <asp:TableRow>
+                            <asp:TableCell Width="24">&nbsp;</asp:TableCell>
+                            <asp:TableCell>
+                                <asp:LinkButton runat="server" ID="services" Text="SERVICES" CssClass="link" OnClick="Link_Click" />
+                            </asp:TableCell>
+                        </asp:TableRow>
+                        <asp:TableRow>
+                            <asp:TableCell Width="24">&nbsp;</asp:TableCell>
+                            <asp:TableCell>
+                                <asp:LinkButton runat="server" ID="portfolio" Text="PORTFOLIO" CssClass="link" OnClick="Link_Click" />
+                            </asp:TableCell>
+                        </asp:TableRow>
+                        <asp:TableRow runat="server" ID="penelopeChilversRow" Visible="false">
+                            <asp:TableCell Width="24">&nbsp;</asp:TableCell>
+                            <asp:TableCell>
+                                &nbsp;&nbsp;<asp:LinkButton runat="server" ID="penelopeChilvers" Text="Penelope Chilvers"
+                                    CssClass="link" OnClick="Link_Click" />
+                            </asp:TableCell>
+                        </asp:TableRow>
+                        <asp:TableRow runat="server" ID="fieldCandyRow" Visible="false">
+                            <asp:TableCell Width="24">&nbsp;</asp:TableCell>
+                            <asp:TableCell>
+                                &nbsp;&nbsp;<asp:LinkButton runat="server" ID="fieldCandy" Text="Field Candy"
+                                    CssClass="link" OnClick="Link_Click" />
+                            </asp:TableCell>
+                        </asp:TableRow>
+                        <asp:TableRow runat="server" ID="shrimpsRow" Visible="false">
+                            <asp:TableCell Width="24">&nbsp;</asp:TableCell>
+                            <asp:TableCell>
+                                &nbsp;&nbsp;<asp:LinkButton runat="server" ID="shrimps" Text="Shrimps"
+                                    CssClass="link" OnClick="Link_Click" />
+                            </asp:TableCell>
+                        </asp:TableRow>
+                        <asp:TableRow runat="server" ID="ilovegorgeousRow" Visible="false">
+                            <asp:TableCell Width="24">&nbsp;</asp:TableCell>
+                            <asp:TableCell>
+                                &nbsp;&nbsp;<asp:LinkButton runat="server" ID="ilovegorgeous" Text="ilovegorgeous"
+                                    CssClass="link" OnClick="Link_Click" />
+                            </asp:TableCell>
+                        </asp:TableRow>
+                        <asp:TableRow runat="server" ID="theDesignMuseumRow" Visible="false">
+                            <asp:TableCell Width="24">&nbsp;</asp:TableCell>
+                            <asp:TableCell>
+                                &nbsp;&nbsp;<asp:LinkButton runat="server" ID="theDesignMuseum" Text="The Design Museum"
+                                    CssClass="link" OnClick="Link_Click" />
+                            </asp:TableCell>
+                        </asp:TableRow>
+                        <asp:TableRow runat="server" ID="anyaHindmarchRow" Visible="false">
+                            <asp:TableCell Width="24">&nbsp;</asp:TableCell>
+                            <asp:TableCell>
+                                &nbsp;&nbsp;<asp:LinkButton runat="server" ID="anyaHindmarch" Text="Anya Hindmarch"
+                                    CssClass="link" OnClick="Link_Click" />
+                            </asp:TableCell>
+                        </asp:TableRow>
+                        <asp:TableRow runat="server" ID="linksOfLondonRow" Visible="false">
+                            <asp:TableCell Width="24">&nbsp;</asp:TableCell>
+                            <asp:TableCell>
+                                &nbsp;&nbsp;<asp:LinkButton runat="server" ID="linksOfLondon" Text="Links of London"
+                                    CssClass="link" OnClick="Link_Click" />
+                            </asp:TableCell>
+                        </asp:TableRow>
+                        <asp:TableRow runat="server" ID="moetEtChandonRow" Visible="false">
+                            <asp:TableCell Width="24">&nbsp;</asp:TableCell>
+                            <asp:TableCell>
+                                &nbsp;&nbsp;<asp:LinkButton runat="server" ID="moetEtChandon" Text="Moet & Chandon"
+                                    CssClass="link" OnClick="Link_Click" />
+                            </asp:TableCell>
+                        </asp:TableRow>
+                        <asp:TableRow runat="server" ID="domPerignonRow" Visible="false">
+                            <asp:TableCell Width="24">&nbsp;</asp:TableCell>
+                            <asp:TableCell>
+                                &nbsp;&nbsp;<asp:LinkButton runat="server" ID="domPerignon" Text="Dom Perignon" CssClass="link"
+                                    OnClick="Link_Click" />
+                            </asp:TableCell>
+                        </asp:TableRow>
+                        <asp:TableRow>
+                            <asp:TableCell Width="24">&nbsp;</asp:TableCell>
+                            <asp:TableCell>
+                                <asp:LinkButton runat="server" ID="testimonials" Text="TESTIMONIALS" CssClass="link"
+                                    OnClick="Link_Click" />
+                            </asp:TableCell>
+                        </asp:TableRow>
+                        <asp:TableRow>
+                            <asp:TableCell Width="24">&nbsp;</asp:TableCell>
+                            <asp:TableCell>
+                                <asp:LinkButton runat="server" ID="contact" Text="CONTACT" CssClass="link" OnClick="Link_Click" />
+                            </asp:TableCell>
+                        </asp:TableRow>
+                    </asp:Table>
+                </asp:TableCell>
+                <asp:TableCell Width="16" CssClass="panel3"></asp:TableCell>
+                <asp:TableCell Width="340px" VerticalAlign="Top" HorizontalAlign="Left">
+                    <div class="standard">
+                        <asp:ContentPlaceHolder ID="body" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </asp:TableCell>
+                <asp:TableCell Width="16" CssClass="panel3"></asp:TableCell>
+                <asp:TableCell Width="136px" HorizontalAlign="Center" VerticalAlign="Top">
+                    <table>
+                        <tr valign="top">
+                            <td class="cell" >
+                                <table cellspacing="20,0,0,0" cellpadding="0">
+                                    <tr>
+                                        <td class="logoCell" >
+                                            <div id="div0" >
+                                            <a id='a0' href='' target="_blank" >
+                                                <img id="img0" height="87" width="87" src="Images/BlankLogo.png"   />
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="logoCell">
+                                            <div id="div1">
+                                            <a id='a1' href='' target="_blank" >
+                                                <img id="img1" height="87" width="87" src="Images/BlankLogo.png"   />
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="logoCell">
+                                            <div id="div2">
+                                            <a id='a2' href='' target="_blank"  >
+                                                <img id="img2" height="87" width="87" src="Images/BlankLogo.png"  />
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="logoCell">
+                                            <div id="div3">
+                                            <a id='a3' href='' target="_blank"  >
+                                                <img id="img3" height="87" width="87" src="Images/BlankLogo.png"  />
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </asp:TableCell>
+            </asp:TableRow>
+        </asp:Table>
+    </div>
+    </form>
+</body>
+</html>
